@@ -26,6 +26,8 @@ pool.getConnection((err, connection) => {
     })
     connection.release()
   }
+  else
+  console.log("ОШИБКА " + err);
 })
 
 export default pool
